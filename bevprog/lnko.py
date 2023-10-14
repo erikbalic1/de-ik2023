@@ -1,9 +1,11 @@
-# legnagyobb kozos oszto algoritmus
+# legnagyobb kozos oszto algoritmus - euklideszi algoritmus
 def lnko(a, b):
     while a % b != 0:
         c = a % b
         a = b
         b = c
     print(b)
-lnko(a, b)
-# irj be az a es b helyere ertekeket!!!
+# vege az algoritmusnak
+a = int(input()) # add meg az elso szamot
+b = int(input()) # add meg a masodik szamot
+lnko(a, b) # behivjuk a fuggvenyt a ket szamra
