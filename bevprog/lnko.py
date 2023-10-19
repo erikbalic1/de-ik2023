@@ -8,4 +8,4 @@ def lnko(a, b):
 # vege az algoritmusnak
 a = int(input()) # add meg az elso szamot
 b = int(input()) # add meg a masodik szamot
-lnko(a, b) # behivjuk a fuggvenyt a ket szamra
+lnko(a, b) # elohivjuk a fuggvenyt a ket szamra
