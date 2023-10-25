@@ -42,3 +42,4 @@ syms x y z
 F(x, y, z) = 1/x^2 - 1/y^2 + 1/z^2;
 fimplicit3(F, [0 10 -10 10 -10 10])
 axis equal
+F(2, 3, 1)
