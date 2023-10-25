@@ -16,7 +16,7 @@ zd(t) = diff(z, t);
 v = [xd(t0), yd(t0), zd(t0)];
 quiver3(P(1), P(2), P(3), v(1), v(2), v(3), 'b')
 
-%implicit alak:
+
 clear
 syms x y
 f(x, y) = sin(x) + cos(y);
@@ -29,3 +29,9 @@ fimplicit(f, 'r', 'LineWidth',4)
 x0 = -6; y0 = 5.8;
 plot3(x0, y0, f(x0, y0), '*', 'MarkerSize', 15)
 
+
+clear
+syms x y z 
+F(x, y, z) = x^2 + y^2 + z^2 -1;
+fimplicit3(F)
+axis equal
