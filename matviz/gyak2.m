@@ -16,7 +16,7 @@ zd(t) = diff(z, t);
 v = [xd(t0), yd(t0), zd(t0)];
 quiver3(P(1), P(2), P(3), v(1), v(2), v(3), 'b')
 
-
+%implicit alak:
 clear
 syms x y
 f(x, y) = sin(x) + cos(y);
