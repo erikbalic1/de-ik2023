@@ -43,3 +43,13 @@ F(x, y, z) = 1/x^2 - 1/y^2 + 1/z^2;
 fimplicit3(F, [0 10 -10 10 -10 10])
 axis equal
 F(2, 3, 1)
+
+
+clear
+syms u v 
+x(u, v) = cos(u);
+y(u, v) = sin(u);
+z(u, v) = v;
+m = 5;
+fsurf(x, y, z, [0 2*pi 0 m])
+axis equal
