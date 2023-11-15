@@ -16,3 +16,10 @@ for i = 0 : n
     cy(t) = cy(t) + py(i + 1) * b(t);
 end
 fplot(cx, cy, [0 1])
+
+%Erintovektorok:
+
+v = [n * (px(2) - px(1)), n * (py(2) - py(1))];
+quiver(px(1), py(1), v(1), v(2))
+w = [n * (px(4) - px(3)), n * (py(4) - py(3))];
+quiver(px(4), py(4), w(1), w(2))
